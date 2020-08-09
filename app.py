@@ -55,8 +55,8 @@ def index():
         # Ini adalah bagian untuk melengkapi konten value box 
         # most category mengambil nama category paling banyak mengacu pada dataframe top_category
         # total mengambil frekuensi/jumlah category paling banyak mengacu pada dataframe top_category
-        'most_category': top_category['Category'][0],
-        'total': top_category['jumlah'][0],
+       'most_categories' : top_category.iloc[0,0],
+       'total': top_category['jumlah'][0],
         # rev_table adalah tabel yang berisi 10 aplikasi yang paling banyak direview oleh pengguna. 
         # Silahkan melakukan agregasi data yang tepat menggunakan groupby untuk menampilkan 10 aplikasi yang diurutkan berdasarkan 
         # jumlah Review pengguna. Tabel yang ditampilkan terdiri dari 4 kolom yaitu nama Category, nama App, total Reviews, dan rata-rata Rating.
